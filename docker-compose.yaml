@@ -1,0 +1,13 @@
+services:
+  jekyll-site:
+    build: .
+    ports:
+      - "127.0.0.1:4000:4000"
+    volumes:
+      - .:/usr/src/app
+      # Keep container dependencies separate from host dependencies.
+      - jekyll_node_modules:/usr/src/app/node_modules
+    init: true
+
+volumes:
+  jekyll_node_modules:

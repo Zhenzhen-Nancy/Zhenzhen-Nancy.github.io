@@ -1,0 +1,3 @@
+# Local preview only; the production URL remains in _config.yml.
+url: "http://localhost:4000"
+baseurl: ""

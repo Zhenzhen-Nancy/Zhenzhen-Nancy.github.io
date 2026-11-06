@@ -1,0 +1,31 @@
+# Add a new entry using this structure. Keep date quoted in YYYY-MM format.
+# Entries are sorted newest first automatically. date_label is the public label.
+# url is an optional site-relative link; omit it when no related page is needed.
+- date: "2026-09"
+  date_label: "September 2026"
+  title: "Started Ph.D. at Politecnico di Milano"
+  content: >-
+    I started my Ph.D. in Bioengineering at Politecnico di Milano under the
+    supervision of Prof. Luca Mainardi. My research focuses on deep learning-based
+    ECG reconstruction and biomedical signal processing.
+  url: /research/
+  link_label: "Explore my research interests"
+
+- date: "2026-07"
+  date_label: "July 2026"
+  title: "Review published in Biomedical Signal Processing and Control"
+  content: >-
+    Our review paper, “A Review of Deep Learning Methods for Non-invasive Fetal
+    Electrocardiography,” was published in *Biomedical Signal Processing and Control*.
+  url: /publication/deep-learning-fetal-electrocardiography-review/
+  link_label: "View publication"
+
+- date: "2025-05"
+  date_label: "May 2025"
+  title: "TCGAN published in IEEE JBHI"
+  content: >-
+    Our paper, “TCGAN: Temporal Convolutional Generative Adversarial Network for
+    Fetal ECG Extraction Using Single-Channel Abdominal ECG,” was published in
+    *IEEE Journal of Biomedical and Health Informatics*.
+  url: /publication/tcgan-fetal-ecg-extraction/
+  link_label: "View publication"

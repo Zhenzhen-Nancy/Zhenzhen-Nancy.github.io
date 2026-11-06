@@ -1,0 +1,15 @@
+# These links control the main navigation and the human-readable sitemap.
+# Use site-relative paths; the theme applies the configured baseurl.
+main:
+  - title: "About Me"
+    url: /
+  - title: "Research Interests"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "News"
+    url: /news/
+  - title: "Research Experience"
+    url: /experience/
+  - title: "Honors and Awards"
+    url: /awards/

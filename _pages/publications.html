@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+description: "Publications by Zhenzhen Huang on non-invasive fetal ECG extraction and biomedical signal processing."
+---
+
+<p>My name appears as <strong>Zhen-Zhen Huang</strong> in the publications below. You can also visit my <a href="https://scholar.google.com/citations?user=mAVH8hsAAAAJ">Google Scholar profile</a>.</p>
+
+{% assign publication_statuses = 'published,accepted,preprint' | split: ',' %}
+{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
+{% for status in publication_statuses %}
+  {% assign status_publications = sorted_publications | where: 'status', status %}
+  {% if status_publications.size > 0 %}
+    {% case status %}
+      {% when 'published' %}<h2>Published Journal Articles</h2>
+      {% when 'accepted' %}<h2>Accepted Articles</h2>
+      {% when 'preprint' %}<h2>Preprints</h2>
+    {% endcase %}
+    {% for post in status_publications %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}

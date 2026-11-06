@@ -1,0 +1,14 @@
+{% assign publication = include.publication %}
+<p class="publication__meta">
+  {% case publication.status %}
+    {% when 'published' %}
+      Published{% if publication.venue %} in <i>{{ publication.venue | escape }}</i>{% endif %}
+    {% when 'accepted' %}
+      Accepted for publication{% if publication.venue %} in <i>{{ publication.venue | escape }}</i>{% endif %}
+    {% when 'preprint' %}
+      Preprint{% if publication.venue %} — <i>{{ publication.venue | escape }}</i>{% endif %}
+    {% else %}
+      Research output{% if publication.venue %} — <i>{{ publication.venue | escape }}</i>{% endif %}
+  {% endcase %}
+  {% if publication.publication_year %}<span class="publication__year">({{ publication.publication_year | escape }})</span>{% endif %}
+</p>

@@ -1,0 +1,28 @@
+<!-- Render the citation if supplied -->
+{% if include.citation %}
+Recommended citation: {{ include.citation }}<br />
+{% endif %}
+<!-- Create the variable so it exists in the event there is no citation -->
+{% assign block = "" %}
+{% if include.paperurl and include.paperurl != "" %}
+{% assign paper_label = "Download Paper" %}
+{% if include.collection == 'publications' %}
+  {% assign paper_label = "Paper" %}
+  {% assign paper_url_lowercase = include.paperurl | downcase %}
+  {% if paper_url_lowercase contains '://doi.org/' or paper_url_lowercase contains '://dx.doi.org/' %}
+    {% assign paper_label = "DOI" %}
+  {% endif %}
+{% endif %}
+{% capture block %}{{ block }}<a href="{{ include.paperurl | escape }}">{{ paper_label }}</a> | {% endcapture %}
+{% endif %}
+{% if include.slidesurl and include.slidesurl != "" %}
+{% capture block %}{{ block }}<a href="{{ include.slidesurl }}">Download Slides</a> | {% endcapture %}
+{% endif %}
+{% if include.bibtexurl and include.bibtexurl != "" %}
+{% capture block %}{{ block }}<a href="{{ include.bibtexurl }}">Download BibTeX</a> | {% endcapture %}
+{% endif %}
+<!-- If we have a block, display it after removing the pipe -->
+{% if block.size > 0 %}
+{% assign length = block.size | minus: 3 %}
+{{ block | slice: 0, length }}
+{% endif %}
