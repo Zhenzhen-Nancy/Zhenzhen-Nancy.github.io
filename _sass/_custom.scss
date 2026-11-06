@@ -31,6 +31,20 @@ body { line-height: 1.7; }
 .publication__links { margin-top: 0.5rem; }
 .author__content:first-child { padding-left: 0; }
 .author__bio { line-height: 1.6; }
+/* Keep a portrait's original proportions instead of masking it as an oval. */
+div.author__avatar { width: 48px; min-width: 48px; }
+.author__avatar > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+}
+@media (min-width: 925px) {
+  div.author__avatar { width: 160px; max-width: 100%; }
+}
 .author__urls li { white-space: normal; overflow-wrap: anywhere; }
 .author__urls a { min-height: 30px; }
 .news-list { padding-left: 1.2em; }

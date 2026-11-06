@@ -23,7 +23,7 @@ repository               : "Zhenzhen-Nancy/Zhenzhen-Nancy.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : # Add a filename in images/ when your portrait is ready.
+  avatar           : "zhenzhen-huang.jpg"
   name             : "Zhenzhen Huang"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student in Bioengineering · Biomedical Signal Processing & Medical AI"

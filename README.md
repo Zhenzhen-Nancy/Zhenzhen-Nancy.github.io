@@ -13,7 +13,7 @@ English academic website for Zhenzhen Huang (Nancy), a Ph.D. student in Bioengin
 - `_config.yml`: identity, contact links, institution and site settings.
 - `_sass/_custom.scss`: the small set of local visual overrides.
 
-No portrait or CV is published until supplied. The original sample content and sample attachments have been removed. Never commit confidential manuscripts or private documents to a public repository.
+The supplied portrait is included at `images/zhenzhen-huang.jpg`, preserving its original 3:4 proportions with slightly rounded corners. A CV has not been supplied, so its download link remains hidden. The original sample content and sample attachments have been removed. Never commit confidential manuscripts or private documents to a public repository.
 
 ## Local preview
 
