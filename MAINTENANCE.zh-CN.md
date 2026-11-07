@@ -9,7 +9,7 @@
 | 要修改的内容 | 文件或目录 |
 | --- | --- |
 | 网站标题、主要邮箱、单位、侧栏简介、头像、学术链接 | `_config.yml` 的网站设置及 `author` 部分 |
-| 首页简介、教育概览、学校邮箱 | `_pages/about.md` |
+| 首页简介、教育概览、联系邮箱 | `_pages/about.md` |
 | 研究方向 | `_pages/research.md` |
 | 教育、培训、研究与工作经历 | `_pages/experience.md` |
 | 奖项 | `_pages/awards.md` |
@@ -130,7 +130,7 @@ Markdown 页面开头两个 `---` 之间是配置，下面才是正文。保留�
 
 主要修改 `_config.yml` 中的 `author.bio`、`author.employer`、`author.location`、`author.email` 和相关个人资料链接；同时更新 `_pages/about.md` 与 `_pages/experience.md`。
 
-- 当前 Gmail 是长期主要邮箱，学校邮箱位于 About 的 Contact 部分。
+- 当前仅公开 Gmail：`zhenzhen.huang0902@gmail.com`，用于侧栏和 About 的 Contact 部分。更换邮箱时同步修改 `_config.yml` 的 `author.email` 与 `_pages/about.md`。
 - 学校或职位变动后，更新当前状态；保留过去教育和工作经历的历史事实，并补全相应结束日期。
 - Google Scholar、ORCID 使用完整链接；`author.github` 填用户名 `Zhenzhen-Nancy`，不填整个网址。
 - 修改 `_config.yml` 后，本地 Jekyll 需要停止并重新启动；它不会自动重载该文件。

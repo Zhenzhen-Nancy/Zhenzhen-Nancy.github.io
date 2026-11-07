@@ -43,6 +43,5 @@ Xidian University, China
 I welcome opportunities to connect with researchers working on biomedical signal processing and medical AI.
 
 - **Email:** [zhenzhen.huang0902@gmail.com](mailto:zhenzhen.huang0902@gmail.com)
-- **Institutional email:** [zhenzhen.huang@polimi.it](mailto:zhenzhen.huang@polimi.it)
 - **Academic profiles:** [Google Scholar](https://scholar.google.com/citations?user=mAVH8hsAAAAJ) · [ORCID](https://orcid.org/0009-0001-1824-560X) · [DEIB profile](https://www.deib.polimi.it/eng/people/details/2557888)
 - **GitHub:** [Zhenzhen-Nancy](https://github.com/Zhenzhen-Nancy)
