@@ -1,6 +1,6 @@
 # 初版验证记录
 
-检查日期：2026-11-06。此记录区分本地验证与线上发布；**网站尚未创建远端仓库、推送或部署**。
+初版本地检查：2026-11-06；线上部署验证：2026-11-07。网站已通过 GitHub Actions 发布至 [https://zhenzhen-nancy.github.io/](https://zhenzhen-nancy.github.io/)。此记录区分静态检查、实际网络访问与尚未完成的浏览器视觉检查。
 
 ## 已实际完成
 
@@ -21,6 +21,7 @@
 | 键盘支持代码 | 增加跳过导航、可聚焦主题按钮、菜单／Contact 的 ARIA 状态与 Escape 关闭返焦；五种主题／存储情形通过脚本行为检查 |
 | 公开输出 | 未发现默认假身份、假论文附件、虚假 CV、维护文档、开发配置或本地绝对路径 |
 | 部署配置 | YAML 与 `docker-compose config` 检查通过；工作流只部署实际默认分支 |
+| GitHub Pages | 公开仓库已建立，默认分支为 `main`，Pages Source 为 GitHub Actions，HTTPS 已启用；首次 build 与 deploy 均成功，公开首页实际返回 HTTP 200 |
 
 本地生产构建仍有上游 Sass 弃用警告，来自模板的旧 Sass 语法。它们没有造成构建失败；首版未大规模重写主题。已保留依赖锁文件，减少后续依赖漂移。
 
@@ -35,7 +36,6 @@
 
 - **实际桌面视觉、390px 手机布局、触控及完整键盘操作**：原生 Chrome 检查工具超时，内置浏览器不可用。静态结构、配色和脚本检查不能替代浏览器检查。
 - **Docker 镜像构建与容器运行**：本机只有 Docker CLI，没有可运行的 Docker Desktop。实际构建使用本机 Ruby 环境完成。
-- **GitHub Actions 运行、Pages 发布、HTTPS 公开网址**：尚未执行，等待公开发布确认及可用的仓库访问渠道；也可按维护说明自行操作。
 - **CV**：尚未提供，因此下载入口隐藏；上传后需检查 PDF 下载。头像已于 2026-11-07 接入，移动端实际视觉仍待检查。
 
 ## 发布前后的人工检查
@@ -53,5 +53,18 @@
 - 已加入 `images/zhenzhen-huang.jpg`（768 × 1024，约 93 KB）并启用 `author.avatar`。
 - 原图内容未修改；CSS 保留 3:4 比例，桌面宽约 160px、窄屏宽约 48px，使用轻微圆角。
 - Jekyll 生产构建成功；实际检查生成的 11 个非重定向页面，均包含正确照片路径和 `alt="Zhenzhen Huang"`。
-- 已确认生成站内的图片与项目图片内容一致。未执行新的浏览器视觉检查，未推送或部署。
+- 加入照片时已确认生成站内的图片与项目图片内容一致；当时未执行新的浏览器视觉检查或线上部署。后续发布结果见下方部署记录。
 - 修改 `_config.yml` 后，正在运行的预览需要先按 Ctrl+C 停止，再运行 `./preview.command`，然后刷新浏览器。
+
+## 2026-11-07：首次公开发布
+
+- 按本人确认发布当前版本，保留现有研究方向、未来兴趣和合作描述。
+- 源码仓库：[Zhenzhen-Nancy/Zhenzhen-Nancy.github.io](https://github.com/Zhenzhen-Nancy/Zhenzhen-Nancy.github.io)。
+- 网站：[https://zhenzhen-nancy.github.io/](https://zhenzhen-nancy.github.io/)。
+- 首次部署提交：`e1ee6a8ca09ea52b5ba2486a398a957af0a2b527`。
+- [首次部署运行 42317695818](https://github.com/Zhenzhen-Nancy/Zhenzhen-Nancy.github.io/actions/runs/42317695818)：build 成功（36 秒）、deploy 成功（1 分 15 秒）。
+- GitHub 自动启用的分支发布已切换为 `workflow`，重复的旧版构建已取消。当前 Pages 状态为 `built`，`https_enforced` 为 `true`。
+- 六个主页面、三篇论文详情均通过公开 HTTPS 实际访问并返回 HTTP 200；九页导航集合、照片路径和 `alt="Zhenzhen Huang"` 均正确。
+- 在线照片 SHA-256 与本地文件一致；22 个本站直接链接及资源（含关键 CSS、JavaScript）全部返回 HTTP 200。
+- 不存在的路径实际返回 HTTP 404，并显示含本人姓名及 “Page Not Found” 的自定义页面。
+- 以上为实际网络与 HTML 检查，不代表已完成桌面及手机浏览器视觉检查。

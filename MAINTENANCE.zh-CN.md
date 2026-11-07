@@ -2,7 +2,7 @@
 
 这份网站沿用 Academic Pages 的 Jekyll 结构。日常更新主要编辑 Markdown（`.md`）和 YAML（`.yml`），不需要改网页代码。网站正文使用英文，本说明使用中文。
 
-本文提供操作步骤，不代表 GitHub 仓库已创建或网站已发布。实际构建、浏览器检查和线上部署状态以交付报告为准。
+网站已发布至 [https://zhenzhen-nancy.github.io/](https://zhenzhen-nancy.github.io/)，源码仓库为 [Zhenzhen-Nancy/Zhenzhen-Nancy.github.io](https://github.com/Zhenzhen-Nancy/Zhenzhen-Nancy.github.io)。实际验证范围及剩余检查见 [VERIFICATION.zh-CN.md](VERIFICATION.zh-CN.md)。
 
 ## 1. 先认识常用文件
 
@@ -138,7 +138,9 @@ Markdown 页面开头两个 `---` 之间是配置，下面才是正文。保留�
 
 奖项比例当前按本人确认为 **Award rate** 展示，不表示 Top X% 排名。其统计范围尚未提供；未来补充范围时直接编辑 `_pages/awards.md`，不要自行推断。
 
-## 6. 首次创建仓库和发布：无需命令行的路径
+## 6. 首次创建与发布步骤（留作参考）
+
+本项目已于 2026-11-07 完成首次发布：将本地已定制的 Academic Pages 项目上传到公开仓库，默认分支为 `main`，Pages Source 为 **GitHub Actions**。日常修改请直接按第 7 节操作。以下步骤仅供重新建站参考，不需要再次创建仓库或覆盖现有内容。
 
 创建仓库、推送源码及开启公开发布都会改变 GitHub 上的状态。请先审阅本地页面和待上传文件，并在准备公开后执行以下步骤。不要将 GitHub 密码、令牌或登录验证码发给协作者；仅在 GitHub 官方登录页面完成登录。
 

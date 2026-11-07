@@ -2,7 +2,7 @@
 
 English academic website for Zhenzhen Huang (Nancy), a Ph.D. student in Bioengineering at Politecnico di Milano. Built with [Academic Pages](https://github.com/academicpages/academicpages.github.io), retaining its Jekyll layouts and Markdown collections.
 
-**Start here:** [中文维护与部署说明](MAINTENANCE.zh-CN.md). The intended public URL is `https://zhenzhen-nancy.github.io/`; preparing these files does not mean the website has been deployed.
+**Live website:** [zhenzhen-nancy.github.io](https://zhenzhen-nancy.github.io/). **Start here:** [中文维护与部署说明](MAINTENANCE.zh-CN.md).
 
 ## Content
 
@@ -32,7 +32,7 @@ Open `http://127.0.0.1:4000/`. Configuration changes require a restart. With a w
 
 ## Publishing
 
-The existing workflow builds and deploys only the repository's default branch. After reviewing and approving the public contents, use a repository named `Zhenzhen-Nancy.github.io` and select **Settings → Pages → Source → GitHub Actions**. The Chinese guide explains the GitHub Desktop and browser steps in detail. Do not add a second deployment workflow.
+The website is published from [Zhenzhen-Nancy/Zhenzhen-Nancy.github.io](https://github.com/Zhenzhen-Nancy/Zhenzhen-Nancy.github.io) through GitHub Actions. Push updates to the default branch (`main`) to trigger deployment, then check the latest [Actions run](https://github.com/Zhenzhen-Nancy/Zhenzhen-Nancy.github.io/actions). The Chinese guide explains maintenance through GitHub Desktop or the browser. Do not add a second deployment workflow.
 
 ## Template provenance
 
